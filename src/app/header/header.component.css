@@ -1,0 +1,31 @@
+.nav-link {
+    display: block;
+    padding: .5rem 3rem;
+    color: white;
+}
+.bg-light {
+    background-color: #1f6dbb!important;
+}
+.main-header ul li{
+    color: white;
+    display: inline-block;
+    font-size: 17px;
+    padding-left: 14px;
+    float: right;
+}
+.nav-link[_ngcontent-wbj-c16] {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: white;
+}
+
+.b1:hover{
+background-color: white;
+color: blue;
+
+}
+
+.b1{
+    width: 77px; height: 35px;font-size:15px;
+    margin-top: 5px;
+}

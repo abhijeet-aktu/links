@@ -1,0 +1,173 @@
+<div class="container">
+    <div class="row">
+    <div class="col-md-8 col-sm-12" style="border-right: 1px solid black;">
+        <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+            <h2 style="color: blue; font-family:serif; font-size: 30px;">  Create an account</h2>
+            <div id="user-data" style="text-align: center;">
+            <div class="row container" style="text-align: center;">
+
+              <div class="form-group">
+                <label for="email"><h4></h4></label>
+                <input type="email" 
+                id="fname" 
+                placeholder="First Name"
+                class="form-control" 
+                ngModel
+                name="email"
+                required
+                email
+                #email="ngModel">
+                <span class="help-block" *ngIf="!email.valid && email.touched">Please enter valid email</span>
+              </div>
+
+
+
+              <div class="form-group" >
+                <label for="username"><h4></h4></label>
+                <input type="password" 
+                placeholder="Middle Name"
+                id="mname" 
+                class="form-control"
+                ngModel
+                name="password"
+                required>
+              </div>
+              
+              <div class="form-group" >
+                <label for="username"><h4></h4></label>
+                <input type="password" 
+                placeholder="Last Name"
+                id="Lname" 
+                class="form-control"
+                ngModel
+                name="password"
+                required>
+              </div>
+            </div>
+           <!-- ------------------------------------------------------ -->
+           <div class="row">
+               <div class="form-group">
+                <div class="form-group" >
+                    <label for="username"><h4></h4></label>
+                    <input type="password" 
+                    placeholder="Date Of Birth"
+                    id="username" 
+                    class="form-control"
+                    ngModel
+                    name="password"
+                    required>
+                  </div>
+               </div>
+           
+        
+           <div class="redio" *ngFor="let g of gender">
+               <label for="">
+                   <input type="radio"
+                   name="gender"
+                  ngModel
+                  [value]="g"
+                  style="font-size: 30px;">
+                  {{g}}
+               </label>
+           </div>
+        </div>
+             <!-- ------------------------------------------------------ -->
+
+
+             <div class="row">
+                 <div class="form-group">
+                    <div class="form-group">
+                        <label for="email"><h4></h4></label>
+                        <input type="email" 
+                        placeholder="E-mail"
+                        id="email" 
+                        class="form-control" 
+                        ngModel
+                        name="email"
+                        required
+                        email
+                        #email="ngModel">
+                        <span class="help-block" *ngIf="!email.valid && email.touched">Please enter valid email</span>
+                      </div>
+                 </div>
+                 <div class="form-group">
+                    <div class="form-group">
+                        <label for="email"><h4></h4></label>
+                        <input type="number" 
+                        id="mobile" 
+                        placeholder="Phone Number"
+                        class="form-control" 
+                        ngModel
+                        placeholder="Phone Number"
+                        name="mobile"
+                        required
+                        email
+                        #email="ngModel">
+                        <span class="help-block" *ngIf="!email.valid && email.touched">Please enter valid email</span>
+                      </div>
+                 </div>
+             </div>
+
+
+             <div class="row">
+                <div class="form-group">
+                   <div class="form-group">
+                       <label for="email"><h4></h4></label>
+                       <input type="password" 
+                       id="password" 
+                       class="form-control in" 
+                       ngModel
+                       placeholder="Password"
+                       name="password"
+                       required
+                       email
+                       #email="ngModel">
+                       <span class="help-block" *ngIf="!email.valid && email.touched">Please enter valid email</span>
+                     </div>
+                </div>
+                <div class="form-group">
+                   <div class="form-group">
+                       <label for="email"><h4></h4></label>
+                       <input type="password" 
+                       placeholder="RE-enter Password"
+                       id="reenter" 
+                       class="form-control in" 
+                       ngModel
+                       name="email"
+                       required
+                       email
+                       #email="ngModel">
+                       <span class="help-block" *ngIf="!email.valid && email.touched">Please enter valid email</span>
+                     </div>
+                </div>
+            </div>
+             
+
+            
+              <p *ngIf="expression">Enter valid E-mail</p>
+    
+            </div>
+           
+            <div class="checkbox">
+              <label><input type="checkbox" value="keepme" class="check"><h5>By clicking on continue.I agree to the <strong>Term & Conditon</strong></h5></label>
+            </div>
+           
+            <button class="btn btn-primary" type="submit" [disabled]="f.valid" ><h4>Sign Up </h4></button>
+          </form>
+    
+     </div>
+
+     <div class="col-md-4" style="text-align: center; margin-top: 60px;">
+        <h2 style="color: blue;">Sign Up with</h2>
+        <div class="container" style="background-color:#5757e2; width: 366px; text-align: center; height: 40px; border-radius: 5px;" >
+          
+            
+            <h4 style="color: white; padding-top: 6px;">Sign up with Google</h4>
+              </div>
+
+              <div class="container" style="background-color: #2a3584; width: 366px; text-align: center; height: 40px;border-radius: 5px" >
+                <h4 style="color: white;padding-top: 6px;">Sign up with Facebook</h4>
+                  </div>
+     </div>
+    </div>
+</div>

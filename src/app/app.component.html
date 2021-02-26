@@ -1,0 +1,62 @@
+<app-header></app-header>
+<app-signup  *ngIf='status'></app-signup>
+<div class="container" *ngIf="!false">
+<div class="row">
+<div class="col-md-8 col-sm-12">
+<img src="https://cdn.dribbble.com/users/3949512/screenshots/14288548/secured-ssl-web-login-icon_4x.jpg" 
+class="img img-reponibe" alt="hhhh" style=" height:400px" >
+
+</div>
+<div class="col-md-4">
+    
+        <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+          <h2 style="color: blue; font-family:serif; font-size: 30px;">Sign in to your account</h2>
+          <div id="user-data" >
+          
+            <div class="form-group">
+              <label for="email"><h4>E-mail</h4></label>
+              <input type="email" 
+              id="email" 
+              class="form-control" 
+              ngModel
+              name="email"
+              required
+              email
+              #email="ngModel">
+              <span class="help-block" *ngIf="!email.valid && email.touched">Please enter valid email</span>
+            </div>
+            <div class="form-group" >
+              <label for="username"><h4>Password</h4></label>
+              <input type="password" 
+              id="username" 
+              class="form-control"
+              ngModel
+              name="password"
+              required>
+            </div>
+            <p *ngIf="expression">Enter valid E-mail</p>
+  
+          </div>
+         
+          <div class="checkbox">
+            <label><input type="checkbox" value="keepme" class="check">Keep me Sign In</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" value="sig" style="font-size: 17px;">Sign in with OTP</label>
+          </div>
+          <button class="btn btn-primary" type="submit" [disabled]="!f.valid" style="width: 366px; height: 40px;"><h4>Sign In</h4></button>
+        </form>
+        <hr>
+        <div class="container" style="background-color:#5757e2; width: 366px; text-align: center; height: 40px; border-radius: 5px;" >
+      
+      <h4 style="color: white; padding-top: 6px;">Sign up with Google</h4>
+        </div>
+        <div class="container" style="background-color: #2a3584; width: 366px; text-align: center; height: 40px;border-radius: 5px" >
+          <h4 style="color: white;padding-top: 6px;">Sign up with Facebook</h4>
+            </div>
+
+          </div>
+</div>
+
+
+

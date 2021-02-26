@@ -1,0 +1,90 @@
+
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<title>Align nav bar item into center</title> 
+	<link rel="stylesheet" href= 
+"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity= 
+"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+		crossorigin="anonymous" /> 
+
+	<link rel="stylesheet" type="text/css" href= 
+"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" /> 
+	<link rel="stylesheet" href= 
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style> 
+		.navbar-nav.navbar-center { 
+			position: absolute; 
+			left: 50%; 
+			transform: translatex(-50%); 
+		} 
+	</style> 
+</head> 
+
+<body>
+    <div class="row">
+        <div class="col-md-12" style='background-color: #79b3fb;'>
+        <div class="main-header container">
+            <ul>
+                <li style="float: left!important; "><i class="fa fa-home" style="font-size:30px"></i><p style="margin-bottom: 0rem;">Madclick.com</p></li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#"class="btn btn-primary b1" (onclick)="clicked()"  style="width: 77px; height: 35px;font-size:15px; ">Sign up</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#"class="btn btn-primary b1" (onclick)="clicked()">Sign in</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#" ><i class="fa fa-shopping-cart"style="font-size:30px ;"></i></a>
+                  </li>     
+               <li><a href="#" style="color: #ffffff;">CONTACT US</a></li>
+                <li><a href="#" style="color: #ffffff;">HEALTH PROVIDERS<i class="fa fa-caret-down"></i></a></li>
+            </ul>
+        </div>
+    
+    </div>
+    </div>
+    
+	<!--NAVBAR STARTING-->
+	<nav class="navbar navbar-expand-sm navbar-light bg-light"> 
+		<div class="container"> 
+			
+			<button class="navbar-toggler" type="button"
+					data-toggle="collapse"
+					data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"> 
+				<span class="navbar-toggler-icon"></span> 
+			</button> 
+
+			<div class="collapse navbar-collapse justify-content-center"
+				id="navbarSupportedContent"> 
+				<ul class="nav ">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#"><h3>Book Appointment</h3></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><h3>Instant Chat</h3></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><h3>Book Test</h3></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="#"><h3>Pharmacy</h3></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#"><h3>Other Service </h3><i class="fa fa-caret-down"></i></a>
+                      </li>
+                  </ul>
+			</div> 
+		</div> 
+    </nav> 
+    
+    
+</body> 
+
+
+</html> 
